@@ -1,58 +1,183 @@
+@font-face {
+  font-family: 'push-menu-custom';
+  src: url('../font/push-menu-custom.eot?95902514');
+  src: url('../font/push-menu-custom.eot?95902514#iefix') format('embedded-opentype'), url('../font/push-menu-custom.woff?95902514') format('woff'), url('../font/push-menu-custom.ttf?95902514') format('truetype'), url('../font/push-menu-custom.svg?95902514#push-menu-custom') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
-        on line 127 of components/_main.scss
-        from line 7 of style.scss
-
-122:    .slide-menu{
-123:     position: static;
-124:     right: auto;
-125:    }
-126:   }
-127: }
-
-Backtrace:
-components/_main.scss:127
-style.scss:7
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/scss/parser.rb:43:in `parse'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Prepros.app/Contents/Resources/app/ruby/ruby_gems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/Applications/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `load'
-/Applications/Prepros.app/Contents/Resources/app/ruby/loader.rb:15:in `<main>'
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'push-menu-custom';
+    src: url('../font/push-menu-custom.svg?95902514#push-menu-custom') format('svg');
+  }
+}
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 127 of components/_main.scss\A         from line 7 of style.scss\A \A 122:    .slide-menu{\A 123:     position: static;\A 124:     right: auto;\A 125:    }\A 126:   }\A 127: }"; }
+/* line 22, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/push-menu-custom */
+[class^="i-"]:before, [class*=" i-"]:before {
+  font-family: "push-menu-custom";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 53, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/push-menu-custom */
+.i-menu:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 54, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/push-menu-custom */
+.i-close:before {
+  content: '\e801'; }
+
+/* '' */
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 7, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 16, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 21, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+  /* line 25, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  body.noscript .close-btn {
+    display: none; }
+
+/* line 30, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+header {
+  padding: 0 1em;
+  position: relative; }
+
+/* line 35, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+.toggle-btn {
+  position: absolute;
+  right: 1em;
+  top: 0; }
+
+/* line 41, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+.navigation ul {
+  margin: 0;
+  padding: 0; }
+  /* line 43, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .navigation ul li {
+    list-style-type: none; }
+    /* line 45, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+    .navigation ul li a {
+      display: block;
+      padding: 0.5em 1em;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      text-decoration: none; }
+    /* line 52, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+    .navigation ul li:first-child a {
+      border-top: 1px solid #ccc; }
+
+/* line 59, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+.toggle-btn, .close-btn {
+  color: #222;
+  height: 40px;
+  width: 40px; }
+  /* line 63, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .toggle-btn i, .close-btn i {
+    border: 1px solid #ccc;
+    padding: 0.5em; }
+  /* line 67, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .toggle-btn span, .close-btn span {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block; }
+
+@media only screen and (max-width: 60em) {
+  /* line 77, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .site-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100; }
+    /* line 82, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+    .site-wrapper .sliding-canvas {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      transition: all 300ms ease-in-out; }
+    /* line 91, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+    .site-wrapper[data-state='slide-open'] .sliding-canvas {
+      -webkit-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+              transform: translateX(-100%); }
+    /* line 96, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+    .site-wrapper[data-state='slide-open'] {
+      overflow: visible; }
+
+  /* line 103, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .slide-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    min-height: 600px; }
+ }
+
+@media only screen and (min-width: 60em) {
+  /* line 119, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .toggle-btn, .close-btn {
+    display: none; }
+
+  /* line 122, /Users/chelseyfrohlick/Documents/Year 3/Sem 2/Development/exercise-3/scss/components/main */
+  .slide-menu {
+    position: static;
+    right: auto; }
+ }
