@@ -42,18 +42,28 @@ header {
   @include zero;
   li{
     list-style-type:none;
+    background-color: $bg-color;
+    display: block;
+    text-align: center;
+
+
+    @include hover ($hover);
+
+    }
     a{
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: $white;
       display:block;
       padding: .5em 1em;
       text-align: center;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 3px solid $white;
       text-decoration: none;
     }
     &:first-child a{
-      border-top: 1px solid $light-grey;
+      border-top: 3px solid $white;
     }
   }
-}
 
 .toggle-btn,
 .close-btn{
@@ -61,7 +71,6 @@ header {
   height: 40px;
   width: 40px;
   i{
-    border: 1px solid $light-grey;
     padding: .5em;
   }
   span{
